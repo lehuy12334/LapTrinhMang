@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 12, 2021 lúc 04:45 PM
+-- Thời gian đã tạo: Th12 12, 2021 lúc 05:28 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -20,6 +20,41 @@ SET time_zone = "+00:00";
 --
 -- Cơ sở dữ liệu: `carodb`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Cấu trúc bảng cho bảng `gamematch`
+--
+
+CREATE TABLE `gamematch` (
+  `ID` int(11) NOT NULL,
+  `PlayerID1` int(11) NOT NULL,
+  `PlayerID2` int(11) NOT NULL,
+  `WinnerID` int(11) DEFAULT NULL,
+  `PlayTime` int(11) NOT NULL,
+  `TotalMove` int(11) NOT NULL,
+  `StartedTime` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `Chat` varchar(50) COLLATE utf8_unicode_ci DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Đang đổ dữ liệu cho bảng `gamematch`
+--
+
+INSERT INTO `gamematch` (`ID`, `PlayerID1`, `PlayerID2`, `WinnerID`, `PlayTime`, `TotalMove`, `StartedTime`, `Chat`) VALUES
+(1, 1, 2, 1, 10, 15, '2020-11-23T17:22:06.081', NULL),
+(2, 2, 3, 2, 20, 25, '2020-11-23T17:22:06.081', NULL),
+(3, 3, 4, 4, 30, 35, '2020-11-23T17:22:06.081', NULL),
+(4, 1, 4, 4, 40, 45, '2020-11-23T17:22:06.081', NULL),
+(5, 3, 2, 3, 50, 55, '2020-11-23T17:22:06.081', NULL),
+(6, 4, 5, 5, 90, 50, '2020-11-23T17:22:06.081', NULL),
+(7, 6, 9, 6, 11, 10, '2021-11-23T09:48:35.031623200', NULL),
+(8, 7, 7, -1, 0, 2, '2021-11-30T19:55:52.387027700', NULL),
+(9, 6, 6, -1, 0, 6, '2021-11-30T19:58:03.643849900', NULL),
+(10, 6, 6, -1, 0, 25, '2021-11-30T20:03:42.354865100', NULL),
+(11, 8, 8, -1, 0, 24, '2021-11-30T20:37:21.006294300', NULL),
+(12, 11, 12, 11, 23, 10, '2021-12-12T22:26:20.011934800', NULL);
 
 -- --------------------------------------------------------
 
@@ -59,6 +94,12 @@ INSERT INTO `player` (`ID`, `Email`, `Password`, `Avatar`, `Name`, `Gender`, `Ye
 --
 
 --
+-- Chỉ mục cho bảng `gamematch`
+--
+ALTER TABLE `gamematch`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Chỉ mục cho bảng `player`
 --
 ALTER TABLE `player`
@@ -68,6 +109,12 @@ ALTER TABLE `player`
 --
 -- AUTO_INCREMENT cho các bảng đã đổ
 --
+
+--
+-- AUTO_INCREMENT cho bảng `gamematch`
+--
+ALTER TABLE `gamematch`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT cho bảng `player`
