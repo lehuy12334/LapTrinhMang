@@ -573,7 +573,7 @@ public class Client implements Runnable {
                         winner.setMatchCount(winner.getMatchCount() +1);
                         //người thua
                         loser.addScore(-2);
-                        loser.setLoseCount(loser.getLoseCount() - 1);
+                        loser.setLoseCount(loser.getLoseCount() + 1);
                         loser.setMatchCount(loser.getMatchCount() +1);
                         bus.update(winner);
                         bus.update(loser);
