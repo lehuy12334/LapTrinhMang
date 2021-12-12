@@ -14,10 +14,7 @@ import java.security.NoSuchAlgorithmException;
 import java.security.PrivateKey;
 import java.security.PublicKey;
 
-/**
- *
- *  * @author Min
- */
+
 // https://stackjava.com/demo/code-java-vi-du-ma-hoa-giai-ma-voi-rsa.html
 public class RSAGenerator {
 

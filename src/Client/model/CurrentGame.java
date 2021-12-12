@@ -7,10 +7,7 @@ package client.model;
 
 import java.util.ArrayList;
 
-/**
- *
- *  * @author Min
- */
+
 public class CurrentGame {
 
     ArrayList<ProfileData> listViewer;

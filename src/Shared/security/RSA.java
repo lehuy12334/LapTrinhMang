@@ -22,10 +22,7 @@ import javax.crypto.Cipher;
 import javax.crypto.IllegalBlockSizeException;
 import javax.crypto.NoSuchPaddingException;
 
-/**
- *
- *  * @author Min
- */
+
 // https://stackjava.com/demo/code-java-vi-du-ma-hoa-giai-ma-voi-rsa.html
 public class RSA {
 

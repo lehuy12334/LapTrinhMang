@@ -7,10 +7,7 @@ package server.controller;
 
 import java.util.ArrayList;
 
-/**
- *
- *  * @author Min
- */
+
 public class ClientManager {
 
     ArrayList<Client> clients;

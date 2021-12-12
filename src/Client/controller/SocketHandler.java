@@ -27,10 +27,7 @@ import shared.constant.StreamData;
 import shared.security.AES;
 import shared.security.RSA;
 
-/**
- *
-  * @author Min
- */
+
 public class SocketHandler {
 
     Socket s;

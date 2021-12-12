@@ -19,10 +19,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import shared.security.RSA;
 
-/**
- *
- *  * @author Min
- */
+
 public class RunServer {
 
     public static volatile ClientManager clientManager;

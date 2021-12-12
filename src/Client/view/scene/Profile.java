@@ -15,10 +15,7 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import shared.constant.Avatar;
 
-/**
- *
- *  * @author Min
- */
+
 public class Profile extends javax.swing.JFrame {
 
     HashMap<String, ImageIcon> hAvatar = new HashMap<>();

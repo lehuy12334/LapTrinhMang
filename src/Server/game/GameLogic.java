@@ -5,10 +5,7 @@
  */
 package server.game;
 
-/**
- *
- *  * @author Min
- */
+
 public class GameLogic {
 
     public GameLogic() {

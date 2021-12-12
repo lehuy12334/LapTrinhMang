@@ -7,10 +7,7 @@ package server.game.caro;
 
 import java.util.concurrent.Callable;
 
-/**
- *
- *  * @author Min
- */
+
 public class TestTimerCaro {
 
     public TestTimerCaro() {

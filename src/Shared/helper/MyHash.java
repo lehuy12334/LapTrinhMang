@@ -17,15 +17,11 @@ import java.util.logging.Logger;
 import javax.crypto.SecretKeyFactory;
 import javax.crypto.spec.PBEKeySpec;
 
-/**
- *
- *  * @author Min
- */
+
 public class MyHash {
 
     // https://www.baeldung.com/java-password-hashing#2-implementing-pbkdf2-in-java
-    // hàm này mỗi lần hash_sha_256 lại ra 1 chuỗi khác nhau, và không hiển thị trong console được, khó hiểu
-    // => Không dùng
+    //=> Không dùng hàm này mỗi lần hash_sha_256 lại ra 1 chuỗi khác nhau, và không hiển thị trong console, đang bị lỗi nên ko dùng
     public static String hash_WTF(String str) {
         try {
             SecureRandom random = new SecureRandom();

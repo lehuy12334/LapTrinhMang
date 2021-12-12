@@ -5,10 +5,7 @@
  */
 package shared.constant;
 
-/**
- *
- *  * @author Min
- */
+
 public class Code {
 
     public static String ACCOUNT_NOT_FOUND = "Không tìm thấy tài khoản.";

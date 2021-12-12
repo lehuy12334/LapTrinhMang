@@ -8,13 +8,10 @@ package shared.helper;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-/**
- *
- *  * @author Min
- */
+
 public class CustumDateTimeFormatter {
 
-    // https://stackoverflow.com/a/6953926
+    
     public static String getCurrentTimeFormatted() {
         return new SimpleDateFormat("HH:mm:ss").format(Calendar.getInstance().getTime());
     }

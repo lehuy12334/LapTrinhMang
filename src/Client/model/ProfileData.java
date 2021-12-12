@@ -5,10 +5,6 @@
  */
 package client.model;
 
-/**
- *
- *  *  * @author Min
- */
 public class ProfileData {
 
     int id;

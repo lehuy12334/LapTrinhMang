@@ -5,10 +5,7 @@
  */
 package shared.constant;
 
-/**
- *
- *  * @author Min
- */
+
 public class StreamData {
 
     /* Cách đọc hiểu đống bên dưới?

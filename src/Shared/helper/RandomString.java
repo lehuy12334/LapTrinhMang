@@ -10,11 +10,7 @@ import java.util.Locale;
 import java.util.Objects;
 import java.util.Random;
 
-/**
- *
- *  * @author Min
- */
-// source: https://stackoverflow.com/a/41156
+
 public class RandomString {
 
     /**

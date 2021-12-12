@@ -11,10 +11,6 @@ import java.util.regex.Pattern;
 import javax.swing.JTextField;
 import javax.swing.SwingUtilities;
 
-/**
- *
- *  *  * @author Min
- */
 public class Validation {
 
     public static boolean checkEmail(String email) {

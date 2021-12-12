@@ -7,10 +7,7 @@ package server.db.layers.DTO;
 
 import java.time.LocalDateTime;
 
-/**
- *
- * @author nguye
- */
+
 public class GameMatch {
 
     int id;

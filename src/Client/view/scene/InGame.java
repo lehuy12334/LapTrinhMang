@@ -27,10 +27,7 @@ import javax.swing.text.DefaultCaret;
 import shared.helper.CountDownTimer;
 import shared.helper.CustumDateTimeFormatter;
 
-/**
- *
- *  *  * @author Min
- */
+
 public class InGame extends javax.swing.JFrame {
 
     final ImageIcon p1Icon = new ImageIcon(Avatar.ASSET_PATH + "icons8_round_24px.png");

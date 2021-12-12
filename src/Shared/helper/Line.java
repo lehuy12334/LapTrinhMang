@@ -5,10 +5,7 @@
  */
 package shared.helper;
 
-/**
- *
- *  * @author Min
- */
+
 public class Line {
 
     public int x1, x2, y1, y2;

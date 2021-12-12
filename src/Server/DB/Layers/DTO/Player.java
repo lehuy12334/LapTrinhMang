@@ -5,10 +5,7 @@
  */
 package server.db.layers.DTO;
 
-/**
- *
- * @author nguye
- */
+
 public class Player {
 
     int id;

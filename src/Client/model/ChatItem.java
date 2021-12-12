@@ -5,10 +5,7 @@
  */
 package client.model;
 
-/**
- *
- *  * @author Min
- */
+
 public class ChatItem {
 
     String time;

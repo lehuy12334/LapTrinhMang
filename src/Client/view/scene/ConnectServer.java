@@ -8,10 +8,7 @@ package client.view.scene;
 import client.RunClient;
 import javax.swing.JOptionPane;
 
-/**
- *
- *  *  * @author Min
- */
+
 public class ConnectServer extends javax.swing.JFrame {
 
     /**

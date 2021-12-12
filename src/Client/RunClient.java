@@ -15,10 +15,7 @@ import client.view.scene.MainMenu;
 import client.view.scene.Profile;
 import client.view.scene.Signup;
 
-/**
- *
- * @author Min
- */
+
 public class RunClient {
 
     public enum SceneName {

@@ -15,10 +15,7 @@ import server.db.layers.BUS.PlayerBUS;
 import server.db.layers.DTO.GameMatch;
 import server.db.layers.DTO.Player;
 
-/**
- *
- *  * @author Min
- */
+
 public class Admin implements Runnable {
 
     GameMatchBUS gameMatchBus;

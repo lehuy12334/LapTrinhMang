@@ -13,10 +13,7 @@ import javax.swing.JList;
 import javax.swing.ListCellRenderer;
 import shared.constant.Avatar;
 
-/**
- *
- *  *  * @author Min
- */
+
 // https://www.codejava.net/java-se/swing/jlist-custom-renderer-example
 public class PlayerInRoomCustomRenderer extends JLabel implements ListCellRenderer<PlayerInGame> {
 

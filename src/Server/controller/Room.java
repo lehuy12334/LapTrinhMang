@@ -17,10 +17,7 @@ import server.db.layers.DTO.GameMatch;
 import server.game.caro.History;
 import shared.constant.StreamData;
 
-/**
- *
- *  * @author Min
- */
+
 public class Room {
 
     String id;

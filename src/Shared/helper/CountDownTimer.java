@@ -14,10 +14,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import server.game.caro.Caro;
 
-/**
- *
- *  * @author Min
- */
+
 public class CountDownTimer {
 
     int timeLimit;

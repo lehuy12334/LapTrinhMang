@@ -5,10 +5,7 @@
  */
 package server.game.caro;
 
-/**
- *
- *  * @author Min
- */
+
 public class History {
 
     int row;

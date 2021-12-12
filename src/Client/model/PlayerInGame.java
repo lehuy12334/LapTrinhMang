@@ -5,10 +5,7 @@
  */
 package client.model;
 
-/**
- *
- *  *  * @author Min
- */
+
 public class PlayerInGame {
 
     String email;

@@ -5,10 +5,7 @@
  */
 package shared.helper;
 
-/**
- *
- *  * @author Min
- */
+
 public class Point {
 
     public int x, y;

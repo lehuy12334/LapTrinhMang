@@ -11,10 +11,7 @@ import java.awt.Container;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 
-/**
- *
- *  *  * @author Min
- */
+
 public class LookAndFeel {
 
     // https://stackoverflow.com/a/10986504

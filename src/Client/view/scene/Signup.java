@@ -11,10 +11,7 @@ import shared.constant.Avatar;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-/**
- *
- *  * @author Min
- */
+
 public class Signup extends javax.swing.JFrame {
 
     /**

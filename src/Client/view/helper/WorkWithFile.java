@@ -14,11 +14,7 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- *
- *  *  * @author Min
- */
-// source: https://raw.githubusercontent.com/HoangTran0410/SmartPhone_Store_Manage_Java/master/src/giaodienchuan/model/BackEnd/ReadWriteFile/WorkWithFile.java
+
 public class WorkWithFile {
 
     public static boolean write(String filepath, String s) {

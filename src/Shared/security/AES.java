@@ -12,10 +12,7 @@ import java.util.UUID;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;
 
-/**
- *
- *  * @author Min
- */
+
 // https://teamvietdev.com/ma-hoa-va-giai-ma-aes-trong-java/
 public class AES {
 

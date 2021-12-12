@@ -25,10 +25,7 @@ import shared.helper.CustumDateTimeFormatter;
 import shared.helper.Line;
 import shared.security.AES;
 
-/**
- *
- *  * @author Min
- */
+
 public class Client implements Runnable {
 
     Socket s;

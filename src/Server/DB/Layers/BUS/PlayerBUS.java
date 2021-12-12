@@ -10,10 +10,7 @@ import server.db.layers.DTO.Player;
 import java.util.ArrayList;
 import shared.constant.Code;
 
-/**
- *
- * @author nguye
- */
+
 public class PlayerBUS {
 
     ArrayList<Player> listPlayer = new ArrayList<>();

@@ -11,10 +11,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-/**
- *
- * @author nguye
- */
+
 public class MysqlConnector {
 
     Connection conn = null;
