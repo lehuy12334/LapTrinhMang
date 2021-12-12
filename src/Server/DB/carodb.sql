@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 12, 2021 lúc 05:28 PM
--- Phiên bản máy phục vụ: 10.4.11-MariaDB
--- Phiên bản PHP: 7.4.6
+-- Host: 127.0.0.1
+-- Generation Time: Dec 12, 2021 at 05:51 PM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.3.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `carodb`
+-- Database: `carodb`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `gamematch`
+-- Table structure for table `gamematch`
 --
 
 CREATE TABLE `gamematch` (
@@ -39,7 +39,7 @@ CREATE TABLE `gamematch` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `gamematch`
+-- Dumping data for table `gamematch`
 --
 
 INSERT INTO `gamematch` (`ID`, `PlayerID1`, `PlayerID2`, `WinnerID`, `PlayTime`, `TotalMove`, `StartedTime`, `Chat`) VALUES
@@ -59,7 +59,7 @@ INSERT INTO `gamematch` (`ID`, `PlayerID1`, `PlayerID2`, `WinnerID`, `PlayTime`,
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `player`
+-- Table structure for table `player`
 --
 
 CREATE TABLE `player` (
@@ -80,47 +80,44 @@ CREATE TABLE `player` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `player`
+-- Dumping data for table `player`
 --
 
 INSERT INTO `player` (`ID`, `Email`, `Password`, `Avatar`, `Name`, `Gender`, `YearOfBirth`, `Score`, `MatchCount`, `WinCount`, `LoseCount`, `CurrentStreak`, `Rank`, `Blocked`) VALUES
-(11, 'huy123@gmail.com', 'b8dc042d8cf7deefb0ec6a264c930b02', 'icons8_trollface_96px.png', 'QuocHuy', 'Nam', 2000, 2, 0, 1, 0, 0, -1, 0),
-(12, 'thanh123@gmail.com', '893c3fd491f30b629fde7abe2ba1b516', 'icons8_circled_user_male_skin_type_7_96px.png', 'Thanh', 'Nam', 2000, -2, 0, 0, -1, 0, -1, 0),
-(13, 'lam123@gmail.com', '740273e48aa999a020df445d4e429517', 'icons8_circled_user_male_skin_type_7_96px.png', 'Lam', 'Nam', 2000, 0, 0, 0, 0, 0, -1, 0),
-(14, 'van123@gmail.com', 'a0e70be9e8f538282678aecf1ecc1f43', 'icons8_circled_user_male_skin_type_7_96px.png', 'Huy', 'Nam', 2000, 0, 0, 0, 0, 0, -1, 0);
+(1, 'huy123@gmail.com', 'b8dc042d8cf7deefb0ec6a264c930b02', 'icons8_trollface_96px.png', 'QuocHuy', 'Nam', 2000, 14, 20, 10, 8, 2, 1, 0),
+(2, 'lam123@gmail.com', '740273e48aa999a020df445d4e429517', 'icons8_circled_user_male_skin_type_7_96px.png', 'Lam', 'Nam', 2000, 34, 20, 16, 9, 4, 4, 0),
+(3, 'thanh123@gmail.com', '893c3fd491f30b629fde7abe2ba1b516', 'icons8_circled_user_male_skin_type_7_96px.png', 'Thanh', 'Nam', 2000, 24, 34, 15, 4, 8, 2, 0),
+(4, 'van123@gmail.com', 'a0e70be9e8f538282678aecf1ecc1f43', 'icons8_circled_user_male_skin_type_7_96px.png', 'Huy', 'Nam', 2000, 12, 34, 10, 7, 5, 3, 0),
+(5, 'g@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'nam', 'Nam', 2000, 13, 36, 12, 5, 2, -1, 0),
+(6, 'f@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'hoa', 'Nữ', 2001, 40, 15, 9, 7, 3, -1, 0),
+(7, 'e@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'dung', 'Nữ', 2001, 7, 25, 8, 12, 4, -1, 0),
+(8, 'd@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'trang', 'Nữ', 2001, 3, 36, 15, 20, 6, -1, 0),
+(9, 'c@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'an', 'Nam', 2000, 14, 27, 2, 15, 1, -1, 0),
+(10, 'b@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'anh', 'Nam', 1998, 20, 19, 8, 8, 2, -1, 0),
+(11, 'a@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'min', 'Nam', 1999, 16, 17, 7, 6, 2, -1, 0),
+(12, 'h@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'phuong', 'Nam', 2000, 27, 6, 1, 4, 1, -1, 0),
+(13, 'k@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'lan', 'Nữ', 1999, 17, 25, 14, 6, 5, -1, 0);
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `gamematch`
---
-ALTER TABLE `gamematch`
-  ADD PRIMARY KEY (`ID`);
-
---
--- Chỉ mục cho bảng `player`
+-- Indexes for table `player`
 --
 ALTER TABLE `player`
   ADD PRIMARY KEY (`ID`),
   ADD UNIQUE KEY `UNIQUE` (`Email`) USING BTREE;
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `gamematch`
---
-ALTER TABLE `gamematch`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
-
---
--- AUTO_INCREMENT cho bảng `player`
+-- AUTO_INCREMENT for table `player`
 --
 ALTER TABLE `player`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
