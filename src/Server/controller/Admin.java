@@ -89,6 +89,7 @@ public class Admin implements Runnable {
     private void showBestPlayerInfo(Player p) {
         System.out.println("Player with the most win count: "
                 + p.getName() + " - " + p.getEmail());
+        System.out.println("Score: " + p.getScore());
         System.out.println("Win count: " + p.getWinCount());
     }
 
