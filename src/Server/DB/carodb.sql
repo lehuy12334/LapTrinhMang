@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 12, 2021 lúc 04:28 PM
+-- Thời gian đã tạo: Th12 12, 2021 lúc 04:33 PM
 -- Phiên bản máy phục vụ: 10.4.11-MariaDB
 -- Phiên bản PHP: 7.4.6
 
@@ -95,7 +95,9 @@ INSERT INTO `player` (`ID`, `Email`, `Password`, `Avatar`, `Name`, `Gender`, `Ye
 (9, 'superman@yahoo.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'man', 'Nam', 2000, -2, 0, 0, -1, 0, -1, 0),
 (10, 'yes@gmail.com', 'e10adc3949ba59abbe56e057f20f883e', 'icons8_circled_user_male_skin_type_7_96px.png', 'nonono', 'Nam', 1987, 0, 0, 0, 0, 0, -1, 0),
 (11, 'huy123@gmail.com', 'b8dc042d8cf7deefb0ec6a264c930b02', 'icons8_trollface_96px.png', 'QuocHuy', 'Nam', 2000, 2, 0, 1, 0, 0, -1, 0),
-(12, 'thanh123@gmail.com', '893c3fd491f30b629fde7abe2ba1b516', 'icons8_circled_user_male_skin_type_7_96px.png', 'Thanh', 'Nam', 2000, -2, 0, 0, -1, 0, -1, 0);
+(12, 'thanh123@gmail.com', '893c3fd491f30b629fde7abe2ba1b516', 'icons8_circled_user_male_skin_type_7_96px.png', 'Thanh', 'Nam', 2000, -2, 0, 0, -1, 0, -1, 0),
+(13, 'lam123@gmail.com', '740273e48aa999a020df445d4e429517', 'icons8_circled_user_male_skin_type_7_96px.png', 'Lam', 'Nam', 2000, 0, 0, 0, 0, 0, -1, 0),
+(14, 'van123@gmail.com', 'a0e70be9e8f538282678aecf1ecc1f43', 'icons8_circled_user_male_skin_type_7_96px.png', 'Huy', 'Nam', 2000, 0, 0, 0, 0, 0, -1, 0);
 
 --
 -- Chỉ mục cho các bảng đã đổ
@@ -128,7 +130,7 @@ ALTER TABLE `gamematch`
 -- AUTO_INCREMENT cho bảng `player`
 --
 ALTER TABLE `player`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
