@@ -30,8 +30,10 @@ public class Admin implements Runnable {
             System.out.print("AdminCommand> ");
             inp = s.nextLine();
             try {
-                if (inp.equalsIgnoreCase("user-count")) {
+                if (inp.equalsIgnoreCase("online-count")) {
                     System.out.println("> " + RunServer.clientManager.getSize());
+                } else if (inp.equalsIgnoreCase("user-count")) {
+                    showUserCount();
                 } else if (inp.equalsIgnoreCase("best-user")) {
                     showBestPlayerInfo(getBestUser());
                 } else if (inp.equalsIgnoreCase("shortest-match")) {
@@ -59,7 +61,8 @@ public class Admin implements Runnable {
             if (inp.equalsIgnoreCase("help")) {
                 System.out.println("===[List commands]======================\n"
                         + "======= Thiết yếu =======\n"
-                        + "user-count:        số người đang online\n"
+                        + "online-count:      số người đang online\n"
+                        + "user-count:        tổng số user\n"
                         + "best-user:         thông tin user thắng nhiều nhất\n"
                         + "shortest-match:    thông tin trận đấu có thời gian ngắn nhất\n"
                         + "block <user-emal>: block user có email là <user-email khỏi hệ thống>\n"
@@ -91,6 +94,20 @@ public class Admin implements Runnable {
                 + p.getName() + " - " + p.getEmail());
         System.out.println("Score: " + p.getScore());
         System.out.println("Win count: " + p.getWinCount());
+    }
+    
+    private int getUserCount(){
+        int count =0;
+        playerBus = new PlayerBUS();
+        int max = 0;
+        for (Player p : playerBus.getList()) {
+            count += 1;
+        }
+        return count;
+    }
+    
+    private void showUserCount() {
+        System.out.println("Number of user: " + getUserCount());
     }
 
     // Get the match with the shortest play time
