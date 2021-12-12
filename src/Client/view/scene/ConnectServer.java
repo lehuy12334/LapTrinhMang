@@ -55,7 +55,12 @@ public class ConnectServer extends javax.swing.JFrame {
         txIP.setText("127.0.0.1");
 
         txPort.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
-        txPort.setText("5056");
+        txPort.setText("5000");
+        txPort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txPortActionPerformed(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabel2.setText("KẾT NỐI SERVER");
@@ -151,6 +156,10 @@ public class ConnectServer extends javax.swing.JFrame {
         // connect to server
         connect(ip, port);
     }//GEN-LAST:event_btnConnectActionPerformed
+
+    private void txPortActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txPortActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txPortActionPerformed
 
     private void connect(String ip, int port) {
         // show loading

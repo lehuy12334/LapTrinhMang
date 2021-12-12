@@ -34,7 +34,7 @@ public class RunServer {
     public RunServer() {
 
         try {
-            int port = 5056;
+            int port = 5000;
 
             ss = new ServerSocket(port);
             System.out.println("Created Server at port " + port + ".");
