@@ -566,9 +566,11 @@ public class Client implements Runnable {
                         Player winner = loginPlayer;
                         Player loser = cCompetitor.loginPlayer;
 
-                        // tinh diem
+                        //tính điểm
+                        //người thắng
                         winner.addScore(3);
                         winner.setWinCount(winner.getWinCount() + 1);
+                        //người thua
                         loser.addScore(-2);
                         loser.setLoseCount(loser.getLoseCount() - 1);
                         bus.update(winner);
