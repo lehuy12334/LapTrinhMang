@@ -1,7 +1,4 @@
 
-File này note ý tưởng của Văn Hoàng
-Chủ yếu để lưu ý tưởng để t dùng chứ ko phải giải thích ý tưởng
-Nên đọc không hiểu thì thôi nhé :))
 
 
 https://www.geeksforgeeks.org/multi-threaded-chat-application-set-1/
